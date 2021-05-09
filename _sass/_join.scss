@@ -1,0 +1,10 @@
+.join {
+    background-color: $color--background;
+}
+
+.join-background {
+    background-color: darken($color--background, 10%);
+    clip-path: polygon(0 0, 50% 2rem, 100% 0%, 100% 100%, 0 100%);
+    padding: 6rem 2rem 5rem 2rem;
+    text-align: center;
+}

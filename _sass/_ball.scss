@@ -1,0 +1,11 @@
+.ball {
+    background-color: darken($color--background, 20%);
+    clip-path: circle(1.4rem);
+    padding: 1rem;
+    text-align: center;
+}
+
+.ball--selected {
+    background-color: $color--primary;
+    color: $color--background;
+}

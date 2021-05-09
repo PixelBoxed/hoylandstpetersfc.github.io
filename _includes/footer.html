@@ -1,0 +1,33 @@
+<footer>
+    <div class="container--page">
+        <div class="footer-wrapper">
+            <div class="footer-content footer-about">
+                <h2 class="hidden">Why join the game?</h2>
+                <img class="footer-logo" src="{{ site.logo | relative_url }}" alt="{{ site.name }} logo" />
+                <p>{{ site.about }}</p>
+            </div><div class="footer-content footer-links">
+                <h2 class="hidden">Quick links</h2>
+                <h3>Pages</h3>
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="/" class="footer-link">Home</a></li>
+                    <li class="footer-item"><a href="/gamecard" class="footer-link">Gamecard</a></li>
+                    <li class="footer-item"><a href="/rules" class="footer-link">Rules</a></li>
+                    <li class="footer-item"><a href="/archive" class="footer-link">Archive</a></li>
+                </ul>
+            </div><div class="footer-content footer-contacts">
+                <h3>Contact us</h3>
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="https://facebook.com/{{ site.facebook }}" class="footer-link" target="_blank">Facebook</a></li>
+                    <li class="footer-item"><a href="{{ site.website }}" class="footer-link" target="_blank">Website</a></li>
+                    <li class="footer-item"><a href="mailto:{{ site.email }}" class="footer-link" target="_blank">Email</a></li>
+                    <li class="footer-item"><a href="https://www.google.com/maps/search/?api=1&query={{ site.map-coords }}" class="footer-link" target="_blank">{{ site.address }}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-content footer-id">
+        <!--TODO: Link this to main URL {% include brand.html %} -->
+        <h2 class="hidden">Disclaimer</h2>
+        <p>Copyright {{ site.name }} {{ 'now' | date: "%Y" }}</p>
+    </div>
+</footer>

@@ -1,0 +1,16 @@
+.brand {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.brand-word {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: lowercase;
+    word-spacing: -.4rem;
+}
+
+.brand-word--second {
+    font-weight: 400;
+}

@@ -1,0 +1,71 @@
+.hero-logo {
+    max-height: 10rem;
+}
+
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: url("/assets/images/hero--balls.png");
+    background-color: $color--background;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    height: 16rem;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center 8rem;
+    background-repeat: no-repeat;
+    background-size: 25rem;
+    position: relative;
+}
+  
+.hero-text {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    transform: translate(-50%, -50%);
+
+}
+
+.hero-heading {
+    color: $color--foreground;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+  
+.hero-button {
+    background-color: $color--primary;
+    border: none;
+    border-radius: .5rem; 
+    color: $color--background;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    outline: 0;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten($color--primary, 50%);
+        color: $color--foreground;
+    }
+}
+
+
+@media screen and (min-width: 1008px) {
+    .hero-image {
+        background-position: center 14rem;
+        background-size: 60rem;
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+        height: 30rem;
+    }
+
+    .hero-text {
+        font-size: 2rem;
+        top: 28%;
+    }
+
+    .hero-heading {
+        font-size: 6rem;
+    }
+}

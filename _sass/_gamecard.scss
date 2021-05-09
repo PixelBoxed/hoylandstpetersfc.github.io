@@ -1,0 +1,113 @@
+.gamecard-tooling {
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.gamecard-filter {
+    border-radius: .4rem;
+    padding: 1rem;
+}
+
+.gamecard-row {
+    border-top: solid 1px darken($color--background, 10%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 2rem 0 2rem 0;
+    width: 100%;
+}
+
+.gamecard-row--hidden {
+    display: none;
+}
+
+.gamecard-row--clickable:hover {
+    cursor: pointer;
+}
+
+.gamecard-control {
+    flex: 1 1 auto;
+}
+
+.gamecard-ref {
+    flex: 2 2 auto;
+}
+
+.gamecard-id {
+    flex: 2 2 auto;
+    text-align: center;
+}
+
+.gamecard-id-ine {
+    display: none;
+}
+
+.gamecard-matches {
+    flex: 2 2 auto;
+    text-align: right;
+}
+
+.gamecard-line {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    max-height: 9rem;
+    overflow-y: hidden;
+    transition: max-height .5s ease-in;
+    width: 100%;
+}
+
+.gamecard-line--hidden {
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+.gamecard-number {
+    flex: 1 0 25%;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.gamecard-number:nth-child(4) {
+    flex-wrap: wrap;
+}
+
+.gamecard-arrow {
+    width: 20px;
+    height: 20px;    
+    transition: 0.15s;
+    transform: rotate(0deg);
+}
+
+.gamecard-arrow--right {
+    transition: 0.25s;
+    transform: rotate(-90deg);
+}
+
+.gamecard-arrow path {
+	stroke: $color--primary;
+	fill: transparent;
+	stroke-width: 3px;
+}
+
+@media screen and (min-width: 1008px) {
+    .gamecard-number {
+        flex: 1 0 auto;
+    }
+    
+    .gamecard-id {
+        display: flex;
+    }
+
+    .gamecard-id-ine {
+        display: block;
+    }
+
+    .gamecard-line {
+        max-height: 5rem;
+    }
+
+    .gamecard-line--hidden {
+        max-height: 0;
+    }
+}

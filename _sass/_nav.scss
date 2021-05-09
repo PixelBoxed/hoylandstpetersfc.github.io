@@ -1,0 +1,58 @@
+.nav-control {
+    padding: 0px;
+    display: inline-block;
+}
+
+.nav-list {
+    display: none;
+}
+
+.nav-list--open {
+    display: inline-block;
+    left: 0;
+    margin: auto;
+    padding: 0px;
+    position: absolute;
+    top: 5.2rem;
+    width: 100%;
+
+    .nav-link {
+        border-bottom: 1px solid $color--background;
+        display: block;
+    }
+}
+
+.nav-item {
+    font-weight: 300;
+    list-style-type: none;
+}
+
+.nav-link {
+    background-color: darken($color--background, 20%);
+    color: $color--foreground;
+    //font-size: 0.9375rem;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 1008px) {
+
+    .nav-control {
+        display: none;
+    }
+
+    .nav-list {
+        display: inline-block;
+    }
+
+    .nav-item {
+        display: inline-block;
+    }
+
+    .nav-link {
+        background-color: inherit;
+        border-radius: .5rem;
+        &:hover {
+            background-color: darken($color--background, 10%);
+        }
+    }
+} 

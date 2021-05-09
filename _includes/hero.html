@@ -1,0 +1,11 @@
+{% assign latestGame = site.data.games.last.number %}
+{% assign latestDraw = site.data.draws.last.draw %}
+{% assign latestResult = site.data.draws.last.date %}
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h2 class="hero-heading">Game {{ latestGame }}: Draw {{ latestDraw }}</h2>
+    <p>{{ latestResult | date: "%A, %d %B %Y"  }}</p>
+    <a href="/gamecard" class="hero-button">View the gamecard</a>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+.promo-header {
+    display: block;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.promo-item {
+    display: block;
+    margin: auto;
+    padding: 4rem 1rem;
+    text-align: center;
+    width: 80%;
+}
+
+.promo-number {
+    color: $color--primary;
+    font-family: 'Changa One';
+    font-size: 10rem;
+    opacity: 50%;
+    margin: 0;
+}
+
+.promo-item--desktop {
+    display: none;
+}
+
+@media screen and (min-width: 1008px) {
+
+    .promo-item {
+        display: inline-block;
+        padding: 4rem;
+        width: 50%;
+    }
+
+    .promo-item--desktop {
+        display: inline-block;
+    }
+
+    .promo-item--right {
+        border-top: 0;
+    }
+}

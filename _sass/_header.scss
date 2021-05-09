@@ -1,0 +1,39 @@
+header {
+    background: $color--background;
+    padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    z-index: 1;
+
+    .brand-word--second {
+        color: $color--primary;
+    }
+}
+  
+.header-up {
+    top: -5rem; // same as header height. use variables in LESS/SASS
+}
+
+.header-brand {
+    float: left;
+    margin-top: 1.4rem;
+}
+
+.header-logo {
+    float: left;
+    margin-right: .5rem;
+    max-height: 2.4rem;
+}
+
+.header-nav {
+    float: right;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 1008px) {
+    .header-nav {
+        margin-right: 0;
+    }
+}

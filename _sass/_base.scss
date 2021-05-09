@@ -1,0 +1,118 @@
+body {
+    background: $color--background;
+    color: $color--foreground;
+    font-family: $bodyFont;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0px;
+    padding-top: 5rem; // same as header height
+  
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.container--content {
+    margin: auto;
+    padding: 1rem;
+    padding-bottom: 4rem;
+    max-width: 76.875rem;
+}
+
+.container--title {
+    background-color: $color--background;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 1008px) {
+
+    .container--title {
+        text-align: left;
+    }
+}
+
+.container--page {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    max-width: 76.875rem;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    padding: .5rem;
+}
+
+.column--left {
+    align-self: flex-start;
+}
+
+.column--right {
+    align-self: flex-end;
+}
+
+.column--two {
+    width: 50%
+}
+
+.column--three {
+    width: 33%;
+}
+
+.center {
+    text-align: center;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.horiz-padding--half {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.body {
+    padding-top: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.come-in--left {
+    transform: translateX(30px);
+    animation: come-in 0.8s ease forwards;
+}
+
+.come-in--right {
+    transform: translateX(-30px);
+    animation: come-in 1s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+    animation-duration: 0.8s; /* So they look staggered */
+}
+  
+@keyframes come-in {
+    to { transform: translateX(0); }
+}
+
+.list-item:not(:last-child) {
+    margin-bottom: 2rem;
+}
